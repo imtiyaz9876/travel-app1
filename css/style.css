@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: o.15em;
+}
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.container{
+     max-width: 1400px; 
+    width: 90%;
+    margin: 0 auto;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-red{
+    color: red;
+}
+.text-black{
+    color: #333;
+}
+.text-light{
+    color:white;
+}
+.text-grey{
+    color: #335;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin:0.5em 0;
+}
+.btn-primery{
+    background-color: white;
+    border-radius: 25%;
+}
+.btn-primery:hover{
+    background-color:green;
+}
+.btn-sec{
+    border: 2px solid red;
+    border-radius: 25%;
+}
+.btn-sec:hover{
+    background-color: red;
+    color: white;
+}
+.header{
+    position: relative;
+    height:95vh;
+    background-image: url('../img/pexels-kostiantyn-stupak-599982.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+ .navbar{ 
+      /* border: 2px solid black;  */
+     background-color: #333; 
+ } 
+ .navbar a{
+    color:red;
+    font-size: 2.5rem;
+}
+ .navbar .logo{
+     margin-top: 5px;
+    float: left;
+   
+}
+ .navbar .nav-item{
+    float: right;
+}
+ .navbar .nav-item li{
+    display: inline-block;
+    padding: 1rem;
+}
+.navbar a:hover{
+    border-bottom: 1px solid red;
+}
+.navbar::after{
+    content:'' ;
+    display: block;
+    clear: both;
+}
+.header-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #333;
+
+}
+.header-content p{
+    text-transform: uppercase;
+    font-size: 2rem;
+    background-color: #333;
+}
+.showcase{
+    background-color: antiquewhite;
+    padding: 50px 0;
+}
+.row{
+    height: 350px;
+    background-color: white;
+    /* border: 2px silid red; */
+    box-shadow: 2px 2px;
+}
+.row1{
+    margin-bottom: 120px;
+}
+.row1 .imag-box,.row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row1 .text-box,.row2 .imag-box{
+    float: right;
+    width: 50%;
+}
+.row .imag-box{
+    height: 100%;
+}
+.row .text-box{
+    height: 100%;
+    padding: 20px;
+}
+.row .imag-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-box p{
+    font-size: 1.5rem;
+}
+.navbar .nav-item,.navbar .logo{
+    /*background-color: rgb(150, 175, 174);*/
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrapper{
+    border: red;
+    box-shadow: 0px 0px 20px gray;
+} 
+
+.box{
+    border: #333;
+    width: 33.333%;
+    float: left;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+.box-1,.box-3{
+    background-color: black;
+    color: white;
+}
+.box-2{
+    background-color: red;
+    color: white;
+}
+.wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*footer{
+  border: 2px solid green;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: blanchedalmond;
+
+}
+ footer .social-media{
+     position: absolute;
+     top: 10%;
+     bottom: 100%;
+     left: 50%;
+ }
+ .footer .para{
+     border: 1px solid red;
+     text-align: center;
+ }*/
+ .bottom-line{
+     border-bottom: 4px solid red;
+     margin-top: 15px;
+ }
+ .check-point{
+    padding: 15px;
+    margin-top: 40px;
+    text-align: center;
+}
+ 
+ .check-point .left-pt{
+     float: left;
+     width: 40%;
+ }
+ .check-point .right-pt{
+    float: right;
+    width: 40%;
+}
+.check-point::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.check-point li::before{
+    content:"\2713\0020";
+    color: red;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.count{
+   /* border: 2px solid red;*/
+    padding: 20px;
+    text-align: center;
+}
+.count .choice{
+    float: left;
+    width: 25%;
+}
+.count::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.contact-banner{
+    background-color: red;
+    margin-top: 15px;
+}
+.tagline{
+    padding: 20px;
+    float: left;
+    width: 70%;
+    color: white;
+}
+.click-contact{
+    float: right;
+    width: 30%;
+    color: white;
+    text-align: right;
+}
+.contact-banner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.btn-cont{
+border: 2px solid white;
+display: inline-block;
+text-align: center;
+padding: 5px 10px;
+margin: 10px;
+color: white;
+}
+.contact-form{
+    margin-top: 50px;
+    background-color: #f7f7f7;
+}
+.form-wrapper{
+    /* border: 3px solid red; */
+    
+}
+ .form-wrapper .address{
+     background-color: white;
+    /* border: 2px dotted green; */
+    float: left;
+    width: 48%;
+    padding: 20px;
+  
+}
+.form-wrapper .form{
+    background-color: white;
+     /* border: 1px solid black;  */
+    float: right;
+    width: 48%;
+    padding: 20px;
+      
+}
+.form-wrapper::after{
+ content: "";
+ display: block;
+ clear: both;
+}
+.form-wrapper .address i{
+    display: inline-block;
+}
+.form-wrapper .address h1{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.form-wrapper .address img{
+    max-width: 90%;
+    margin-top: 10px;
+    min-width: 30%;
+    object-fit: cover;
+    object-position: right;
+
+}
+.form-wrapper .form label::after{
+    content: "*";
+    color: red;
+}
+/* .form h2{ 
+     content: ""; 
+     display: block; 
+     border-bottom: 8px solid red; 
+     width: 100%; 
+}*/
+.form-wrapper .form label{
+    font-size: 20px;
+}
+.form-btn{
+    text-transform: uppercase;
+    color:red;
+    background-color: #160b0b;
+    font-size: 18px;
+}
+.form-btn:hover{
+    color: aqua;
+}
